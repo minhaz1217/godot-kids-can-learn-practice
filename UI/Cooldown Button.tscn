@@ -1,21 +1,46 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1d1mxlc0je5a"]
+[gd_scene load_steps=3 format=3 uid="uid://b1d1mxlc0je5a"]
 
 [ext_resource type="Texture2D" uid="uid://ctxxena4ne0fi" path="res://sprites/bird-scepter.png" id="1_aelv1"]
+[ext_resource type="Script" uid="uid://cr4ctrfvurbvr" path="res://UI/cooldown_button.gd" id="2_5ieav"]
 
 [node name="AbilityButton" type="TextureButton"]
 texture_normal = ExtResource("1_aelv1")
+script = ExtResource("2_5ieav")
+cooldown = 5.0
 
 [node name="Sweep" type="TextureProgressBar" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+modulate = Color(0.160784, 0.160784, 0.160784, 0.564706)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+fill_mode = 5
 
 [node name="Timer" type="Timer" parent="Sweep"]
+one_shot = true
+autostart = true
 
 [node name="Counter" type="MarginContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="Value" type="Label" parent="Counter"]
 layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 1
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 65
+text = "0.00"
+
+[connection signal="timeout" from="Sweep/Timer" to="." method="_on_timer_timeout"]
