@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1d1mxlc0je5a"]
+
+[ext_resource type="Texture2D" uid="uid://ctxxena4ne0fi" path="res://sprites/bird-scepter.png" id="1_aelv1"]
+
+[node name="AbilityButton" type="TextureButton"]
+texture_normal = ExtResource("1_aelv1")
+
+[node name="Sweep" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Timer" type="Timer" parent="Sweep"]
+
+[node name="Counter" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Value" type="Label" parent="Counter"]
+layout_mode = 2
