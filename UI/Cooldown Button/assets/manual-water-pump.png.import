@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctxxena4ne0fi"
-path="res://.godot/imported/bird-scepter.png-98a9b5343e12056e52caab940c3343c1.ctex"
+uid="uid://c2rfwot5qcalv"
+path="res://.godot/imported/manual-water-pump.png-e2c9569588296d00f279430be31512bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bird-scepter.png"
-dest_files=["res://.godot/imported/bird-scepter.png-98a9b5343e12056e52caab940c3343c1.ctex"]
+source_file="res://UI/Cooldown Button/assets/manual-water-pump.png"
+dest_files=["res://.godot/imported/manual-water-pump.png-e2c9569588296d00f279430be31512bf.ctex"]
 
 [params]
 

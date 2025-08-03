@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1qqwr2f2cnp3"
-path="res://.godot/imported/pouch-with-beads.png-079daadfc2cdcc7cd96a002efb80ec83.ctex"
+uid="uid://c1jxqxmqvqyok"
+path="res://.godot/imported/aero-bike.png-2d301a80f30b8f271c21e1a660ba0357.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/pouch-with-beads.png"
-dest_files=["res://.godot/imported/pouch-with-beads.png-079daadfc2cdcc7cd96a002efb80ec83.ctex"]
+source_file="res://UI/Cooldown Button/assets/aero-bike.png"
+dest_files=["res://.godot/imported/aero-bike.png-2d301a80f30b8f271c21e1a660ba0357.ctex"]
 
 [params]
 

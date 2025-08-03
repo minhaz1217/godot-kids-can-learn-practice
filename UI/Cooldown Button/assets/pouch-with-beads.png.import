@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2rfwot5qcalv"
-path="res://.godot/imported/manual-water-pump.png-227b86311e73febe37c20e83da865513.ctex"
+uid="uid://d1qqwr2f2cnp3"
+path="res://.godot/imported/pouch-with-beads.png-508dc39f00a7e5069a24658d8b54a637.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/manual-water-pump.png"
-dest_files=["res://.godot/imported/manual-water-pump.png-227b86311e73febe37c20e83da865513.ctex"]
+source_file="res://UI/Cooldown Button/assets/pouch-with-beads.png"
+dest_files=["res://.godot/imported/pouch-with-beads.png-508dc39f00a7e5069a24658d8b54a637.ctex"]
 
 [params]
 

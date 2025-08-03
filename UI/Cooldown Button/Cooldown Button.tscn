@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b1d1mxlc0je5a"]
 
-[ext_resource type="Texture2D" uid="uid://ctxxena4ne0fi" path="res://sprites/bird-scepter.png" id="1_aelv1"]
-[ext_resource type="Script" uid="uid://cr4ctrfvurbvr" path="res://UI/cooldown_button.gd" id="2_5ieav"]
+[ext_resource type="Texture2D" uid="uid://ctxxena4ne0fi" path="res://UI/Cooldown Button/assets/bird-scepter.png" id="1_aelv1"]
+[ext_resource type="Script" uid="uid://cr4ctrfvurbvr" path="res://UI/Cooldown Button/cooldown_button.gd" id="2_5ieav"]
 
 [node name="AbilityButton" type="TextureButton"]
 texture_normal = ExtResource("1_aelv1")
