@@ -25,7 +25,3 @@ texture = ExtResource("2_p8o2u")
 [node name="5" type="TextureRect" parent="."]
 layout_mode = 2
 texture = ExtResource("2_p8o2u")
-
-[node name="6" type="TextureRect" parent="."]
-layout_mode = 2
-texture = ExtResource("2_p8o2u")

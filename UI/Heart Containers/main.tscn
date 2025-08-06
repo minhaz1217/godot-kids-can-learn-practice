@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://cprl1iqyffnop"]
+
+[ext_resource type="PackedScene" uid="uid://ciw8l5u7bih2b" path="res://UI/Heart Containers/Heart Containers.tscn" id="1_d2jwx"]
+[ext_resource type="Script" uid="uid://dps8bdqe0cp6q" path="res://UI/Heart Containers/main.gd" id="1_sp1vp"]
+
+[node name="Node" type="HBoxContainer"]
+script = ExtResource("1_sp1vp")
+
+[node name="HeartContainers" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HeartContainers"]
+layout_mode = 2
+
+[node name="simple" parent="HeartContainers/HBoxContainer" instance=ExtResource("1_d2jwx")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HeartContainers/HBoxContainer"]
+layout_mode = 2
+text = "Simple"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HeartContainers"]
+layout_mode = 2
+
+[node name="empty" parent="HeartContainers/HBoxContainer2" instance=ExtResource("1_d2jwx")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HeartContainers/HBoxContainer2"]
+layout_mode = 2
+text = "Empty"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HeartContainers"]
+layout_mode = 2
+
+[node name="partial" parent="HeartContainers/HBoxContainer3" instance=ExtResource("1_d2jwx")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HeartContainers/HBoxContainer3"]
+layout_mode = 2
+text = "Partial"
+
+[node name="Score" type="Label" parent="HeartContainers"]
+layout_mode = 2
+text = "Health: 5"
+
+[node name="IncreaseButton" type="Button" parent="."]
+layout_mode = 2
+text = "+"
+
+[node name="DecreaseButton" type="Button" parent="."]
+layout_mode = 2
+text = "-"
+
+[connection signal="pressed" from="IncreaseButton" to="." method="_on_increase_button_pressed"]
+[connection signal="pressed" from="DecreaseButton" to="." method="_on_decrease_button_pressed"]
