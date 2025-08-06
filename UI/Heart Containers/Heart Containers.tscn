@@ -1,24 +1,31 @@
-[gd_scene load_steps=2 format=3 uid="uid://ciw8l5u7bih2b"]
+[gd_scene load_steps=3 format=3 uid="uid://ciw8l5u7bih2b"]
 
 [ext_resource type="Script" uid="uid://dt8nnic8w8n18" path="res://UI/Heart Containers/heart_containers.gd" id="1_pbn0q"]
+[ext_resource type="Texture2D" uid="uid://c1t02puxvo84y" path="res://UI/Heart Containers/assets/hud_heartFull.png" id="2_p8o2u"]
 
 [node name="HeartContainers" type="HBoxContainer"]
 script = ExtResource("1_pbn0q")
 
 [node name="1" type="TextureRect" parent="."]
 layout_mode = 2
+texture = ExtResource("2_p8o2u")
 
 [node name="2" type="TextureRect" parent="."]
 layout_mode = 2
+texture = ExtResource("2_p8o2u")
 
 [node name="3" type="TextureRect" parent="."]
 layout_mode = 2
+texture = ExtResource("2_p8o2u")
 
 [node name="4" type="TextureRect" parent="."]
 layout_mode = 2
+texture = ExtResource("2_p8o2u")
 
 [node name="5" type="TextureRect" parent="."]
 layout_mode = 2
+texture = ExtResource("2_p8o2u")
 
 [node name="6" type="TextureRect" parent="."]
 layout_mode = 2
+texture = ExtResource("2_p8o2u")
