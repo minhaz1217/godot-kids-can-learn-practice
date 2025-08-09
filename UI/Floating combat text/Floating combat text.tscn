@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://csd0is1k7idin"]
+[gd_scene load_steps=3 format=3 uid="uid://csd0is1k7idin"]
 
-[node name="FloatingCombatText" type="Label"]
+[ext_resource type="Script" uid="uid://wnfg23yn0ro4" path="res://UI/Floating combat text/floating_combat_text.gd" id="1_kpuwo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_kpuwo"]
+
+[node name="FCT" type="Label"]
+label_settings = SubResource("LabelSettings_kpuwo")
+script = ExtResource("1_kpuwo")
