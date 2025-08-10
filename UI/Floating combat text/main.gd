@@ -1,0 +1,17 @@
+extends Node2D
+
+
+
+var FCT = preload("res://UI/Floating combat text/Floating combat text.tscn")
+
+@export var travel = Vector2(0, -80)
+@export var duration = 2
+@export var spread = PI/2
+
+func show_value(value, crit=false):
+	var fct = FCT.instantiate()
+	add_child(fct)
+	fct.show_value(str(value), travel, duration, spread, crit)
+
+func _process(delta: float) -> void:
+	show_value(randi_range(100, 1000))
