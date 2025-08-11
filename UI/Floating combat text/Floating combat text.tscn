@@ -5,5 +5,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_kpuwo"]
 
 [node name="FCT" type="Label"]
+offset_right = 1.0
+offset_bottom = 23.0
 label_settings = SubResource("LabelSettings_kpuwo")
 script = ExtResource("1_kpuwo")
