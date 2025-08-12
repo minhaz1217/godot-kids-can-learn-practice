@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfe07mu1ftlft"]
+
+[ext_resource type="Script" uid="uid://it157kjk8qbg" path="res://UI/Level Select Menu/level_box.gd" id="1_oh5wb"]
+[ext_resource type="Texture2D" uid="uid://bmn85csl0oxxm" path="res://UI/Level Select Menu/hud_keyRed_disabled.png" id="2_6cv02"]
+
+[node name="LevelBox" type="PanelContainer"]
+custom_minimum_size = Vector2(120, 120)
+script = ExtResource("1_oh5wb")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_6cv02")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
