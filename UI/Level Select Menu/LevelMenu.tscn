@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0buvlvjxrpxg"]
+
+[ext_resource type="Script" uid="uid://b4uqhigy80224" path="res://UI/Level Select Menu/level_menu.gd" id="1_0tdqe"]
+[ext_resource type="PackedScene" uid="uid://bmmpl1ftkuhfo" path="res://UI/Level Select Menu/LevelGrid.tscn" id="1_d48kn"]
+[ext_resource type="Texture2D" uid="uid://dnfi2jho1kug0" path="res://UI/Level Select Menu/swordBronze.png" id="2_mdkni"]
+
+[node name="LevelMenu" type="MarginContainer"]
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_0tdqe")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Level Select"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="BackButton" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_mdkni")
+stretch_mode = 3
+
+[node name="ClipControl" type="Control" parent="VBoxContainer/HBoxContainer"]
+clip_contents = true
+custom_minimum_size = Vector2(770, 510)
+layout_mode = 2
+
+[node name="GridBox" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/ClipControl"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LevelGrid" parent="VBoxContainer/HBoxContainer/ClipControl/GridBox" instance=ExtResource("1_d48kn")]
+layout_mode = 2
+
+[node name="LevelGrid2" parent="VBoxContainer/HBoxContainer/ClipControl/GridBox" instance=ExtResource("1_d48kn")]
+layout_mode = 2
+
+[node name="LevelGrid3" parent="VBoxContainer/HBoxContainer/ClipControl/GridBox" instance=ExtResource("1_d48kn")]
+layout_mode = 2
+
+[node name="NextButton" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("2_mdkni")
+stretch_mode = 3
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/NextButton" to="." method="_on_next_button_pressed"]
