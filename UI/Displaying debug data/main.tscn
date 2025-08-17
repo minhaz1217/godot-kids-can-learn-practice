@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm37oqfsnxmfd"]
+
+[ext_resource type="PackedScene" uid="uid://b15p7yuctuchq" path="res://UI/Displaying debug data/DebugOverlay.tscn" id="1_4sjal"]
+[ext_resource type="Script" uid="uid://dlivivb311kap" path="res://UI/Displaying debug data/main.gd" id="1_hlp32"]
+[ext_resource type="PackedScene" uid="uid://trr8gxr4lquy" path="res://animation/Spritesheet animation/Using the AnimationTree StateMachine.tscn" id="3_ouwrf"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_hlp32")
+
+[node name="DebugOverlay" parent="." instance=ExtResource("1_4sjal")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="SpritesheetAnimation" parent="." instance=ExtResource("3_ouwrf")]
