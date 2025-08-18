@@ -4,4 +4,5 @@ extends Node2D
 
 
 func _ready() -> void:
-	debug_overlay.add_property(spritesheet_animation, "transform:origin", "round")
+	DebugOverlay.setup_debugger($DebugOverlay)
+	DebugOverlay.add_property(spritesheet_animation, "transform:origin", "round")

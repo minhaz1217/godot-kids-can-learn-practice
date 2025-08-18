@@ -1,12 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b15p7yuctuchq"]
-
-[ext_resource type="Script" uid="uid://ytivonnugwu6" path="res://UI/Displaying debug data/debug_overlay.gd" id="1_5vy7y"]
+[gd_scene format=3 uid="uid://b15p7yuctuchq"]
 
 [node name="DebugOverlay" type="MarginContainer"]
 custom_minimum_size = Vector2(20, 20)
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_5vy7y")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
