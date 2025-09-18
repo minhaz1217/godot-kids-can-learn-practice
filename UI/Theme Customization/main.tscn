@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6yrndhexr7sg"]
+
+[ext_resource type="Theme" uid="uid://cocj46chtb6l0" path="res://UI/Theme Customization/kenny_ui_pack_theme.tres" id="1_qp4hy"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qp4hy")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="VSplitContainer"]
+layout_mode = 2
+text = "Test"
+
+[node name="Button2" type="Button" parent="VSplitContainer"]
+layout_mode = 2
+text = "Start Game"
